@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automtion Smoke test suite" duration-ms="113039" started-at="2021-04-20T10:02:08Z" finished-at="2021-04-20T10:04:01Z">
+    <groups>
+    </groups>
+    <test name="DemoTest_case1" duration-ms="113039" started-at="2021-04-20T10:02:08Z" finished-at="2021-04-20T10:04:01Z">
+      <class name="com.qa.smokesuite.testcases.DemoTest_case3">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="setUp" is-config="true" duration-ms="18016" started-at="2021-04-20T10:02:08Z" finished-at="2021-04-20T10:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_test()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="tc_test" duration-ms="22814" started-at="2021-04-20T10:02:26Z" finished-at="2021-04-20T10:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="tearDown" is-config="true" duration-ms="1101" started-at="2021-04-20T10:02:49Z" finished-at="2021-04-20T10:02:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="setUp" is-config="true" duration-ms="5180" started-at="2021-04-20T10:02:50Z" finished-at="2021-04-20T10:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_test2()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="tc_test2" duration-ms="65232" started-at="2021-04-20T10:02:55Z" finished-at="2021-04-20T10:04:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_test2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case3@1aeed2f]" name="tearDown" is-config="true" duration-ms="654" started-at="2021-04-20T10:04:01Z" finished-at="2021-04-20T10:04:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.smokesuite.testcases.DemoTest_case3 -->
+      <class name="com.qa.smokesuite.testcases.DemoTest_case2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="setUp" is-config="true" duration-ms="18191" started-at="2021-04-20T10:02:08Z" finished-at="2021-04-20T10:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_test1()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="tc_test1" duration-ms="34" started-at="2021-04-20T10:02:27Z" finished-at="2021-04-20T10:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="tearDown" is-config="true" duration-ms="1215" started-at="2021-04-20T10:02:27Z" finished-at="2021-04-20T10:02:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="setUp" is-config="true" duration-ms="15407" started-at="2021-04-20T10:02:28Z" finished-at="2021-04-20T10:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_test2()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="tc_test2" duration-ms="23064" started-at="2021-04-20T10:02:43Z" finished-at="2021-04-20T10:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_test2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case2@7fa833]" name="tearDown" is-config="true" duration-ms="2197" started-at="2021-04-20T10:03:06Z" finished-at="2021-04-20T10:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.smokesuite.testcases.DemoTest_case2 -->
+      <class name="com.qa.smokesuite.testcases.DemoTest_case1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="setUp" is-config="true" duration-ms="19297" started-at="2021-04-20T10:02:08Z" finished-at="2021-04-20T10:02:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="test1" duration-ms="65692" started-at="2021-04-20T10:02:28Z" finished-at="2021-04-20T10:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="tearDown" is-config="true" duration-ms="671" started-at="2021-04-20T10:03:33Z" finished-at="2021-04-20T10:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="setUp" is-config="true" duration-ms="3412" started-at="2021-04-20T10:03:34Z" finished-at="2021-04-20T10:03:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="test2" duration-ms="1" started-at="2021-04-20T10:03:37Z" finished-at="2021-04-20T10:03:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.smokesuite.testcases.DemoTest_case1@17e2f02]" name="tearDown" is-config="true" duration-ms="625" started-at="2021-04-20T10:03:37Z" finished-at="2021-04-20T10:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.smokesuite.testcases.DemoTest_case1 -->
+    </test> <!-- DemoTest_case1 -->
+  </suite> <!-- Automtion Smoke test suite -->
+</testng-results>
