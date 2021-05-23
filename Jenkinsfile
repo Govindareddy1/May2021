@@ -14,8 +14,8 @@ agent any
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
                     git 'https://github.com/Govindareddy1/May2021.git'
-                   // bat "mvn clean install"
-                   sh "mvn clean install"
+                   bat "mvn clean install"
+                  // sh "mvn clean install"
                 }
             }
         }
