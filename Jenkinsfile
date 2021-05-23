@@ -13,9 +13,9 @@ agent any
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
-                    git 'https://github.com/Govindareddy1/May2021.git'
-                   bat "mvn clean install"
-                  // sh "mvn clean install"
+                    //git 'https://github.com/Govindareddy1/May2021.git'
+                  bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                  
                 }
             }
         }
