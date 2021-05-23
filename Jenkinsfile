@@ -1,40 +1,32 @@
-pipeline
-{
+
+
+pipeline {
     agent any
 
-    stages 
+    tools 
+	{
+        maven "MAVEN_HOME"
+    }
+
+    stages
 	{
         stage('Build') 
 		{
             steps 
 			{
-                echo 'Build App..'
+                
+                git 'https://github.com/Govindareddy1/May2021.git'
+                bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
-        }
-		
-		stage('Test') 
-		{
-            steps 
+
+            post 
 			{
-                echo 'Test App.....'
+                success
+				{
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
             }
-        }
-		
-		stage('Deploy') 
-		{
-            steps 
-			{
-                echo 'Deploy World'
-            }
-        }
-		
-    }
-	
-	post 
-	{
-        always 
-		{
-           emailext body: 'Test pipeline', subject: 'Jenkins Pipeline Automation', to: 'agreddytest@gmail.com'
         }
     }
 }
