@@ -1,9 +1,6 @@
 pipeline { 
 agent any 
-    tools 
-	{
-        maven "MAVEN_HOME"
-    }
+   
     stages { 
         
         stage ('Build') { 
@@ -17,8 +14,7 @@ agent any
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
-                    //git 'https://github.com/Govindareddy1/May2021.git'
-                  bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                    bat "mvn clean install"
                   
                 }
             }
