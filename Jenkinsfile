@@ -1,32 +1,36 @@
+pipeline { 
+agent any 
+    stages { 
+        
+        stage ('Build') { 
+            steps{
+                echo "Building"
 
-
-pipeline {
-    agent any
-
-    tools 
-	{
-        maven "MAVEN_HOME"
-    }
-
-    stages
-	{
-        stage('Build') 
-		{
-            steps 
-			{
-                
-                git 'https://github.com/Govindareddy1/May2021.git'
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
-
-            post 
-			{
-                success
-				{
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
+        }
+ //for windows ---> bat "mvn clean install"   
+        stage('Test') {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh "mvn clean install"
                 }
             }
         }
+                
+        stage('Publish Extent Report'){
+            steps{
+                     publishHTML([allowMissing: false,
+                                  alwaysLinkToLastBuild: false, 
+                                  keepAll: false, 
+                                  reportDir: 'build', 
+                                  reportFiles: 'TestExecutionReport.html', 
+                                  reportName: 'HTML Extent Report', 
+                                  reportTitles: ''])
+            }
+        }
+        
+        
+        
     }
-}
+
+ }
