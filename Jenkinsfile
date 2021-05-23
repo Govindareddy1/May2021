@@ -25,9 +25,9 @@ agent any
                      publishHTML([allowMissing: false,
                                   alwaysLinkToLastBuild: false, 
                                   keepAll: false, 
-                                  reportDir: 'build', 
-                                  reportFiles: 'TestExecutionReport.html', 
-                                  reportName: 'HTML Extent Report', 
+                                  reportDir: 'TestReport', 
+                                  reportFiles: 'Automation Test Results.html', 
+                                  reportName: 'HTML Extent Report',  
                                   reportTitles: ''])
             }
         }
