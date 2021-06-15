@@ -14,12 +14,20 @@ agent any
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
-                    bat "mvn clean install"
+                    bat "mvn clean test -P Smokesuite -Denv=test"
                   
                 }
             }
         }
-                
+              stage('Stage') {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
+                {
+                    bat "mvn clean test -P Smokesuite -Denv=stage"
+                  
+                }
+            }
+        }   
         stage('Publish Extent Report'){
             steps{
                      publishHTML([allowMissing: false,
