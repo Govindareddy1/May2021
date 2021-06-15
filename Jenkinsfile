@@ -3,14 +3,25 @@ agent any
    
     stages { 
         
-        stage ('Build') { 
-            steps{
-                echo "Building"
+        stage ('Dev Env CI') 
+         { 
+            steps
+            {
+                echo " Dev Building"
 
-            }
+           }
+        }
+       
+       stage ('Test Env CI') 
+         { 
+            steps
+            {
+                echo " Test Building"
+
+           }
         }
  //for windows ---> bat "mvn clean install"   
-        stage('Test') {
+        stage('Test Env Smokte Suite') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
@@ -19,7 +30,17 @@ agent any
                 }
             }
         }
-              stage('Stage') {
+       
+       
+        stage ('Stage Env CI') 
+         { 
+            steps
+            {
+                echo " Test Building"
+
+           }
+        }
+            stage('Stage Env Smoke Suite') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') 
                 {
